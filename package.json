@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "knex:migrate_up": "knex migrate:up",
+    "knex:migrate_latest": "knex migrate:latest",
+    "knex:migrate_rollback_last": "knex migrate:rollback",
+    "knex:migrate_rollback_all": "knex migrate:rollback --all",
+    "knex:seed": "knex seed:run",
+    "server": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "node-cron": "^2.0.3",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "description": ""
+}
